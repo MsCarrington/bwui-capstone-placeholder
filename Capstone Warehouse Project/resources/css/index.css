@@ -1,0 +1,120 @@
+.hero {
+  width: 100%;
+  height: 21.75rem;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  background-image: url('../img/home/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 15px;
+  border-style: solid;
+  border-color: #F1C40F;
+  border-width: 15px;
+}
+
+.button {
+    background-color: #f1c40f; /* Yellow */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+nav {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+nav:hover {
+  color:#F1C40F;
+}
+
+.hero h2 {
+  padding-top: 20rem;
+  padding-bottom: 20 rem;
+  color: hsla(0, 100%, 100%, 1);
+  font-family: verdana;
+  font-size: inherit;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  text-transform:uppercase;
+  border: 5px solid #f1c40f;
+  background-color: white;
+  display: inline-block;
+  padding:20px;
+  margin: 150px;
+}
+
+.hero h2:hover {
+  color: gray;
+}
+
+.hero h2:active {
+  background-color: red;
+}
+.products {
+  padding: 0 5rem 6rem 5rem;
+}
+
+.products h2 {
+  margin-top: 2rem;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.landing .product-list {
+  grid-template-columns: repeat(4, 1fr);
+  transition: all 1s ease-in-out;
+}
+
+.categories h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+    transition: all 1s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .hero {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero h2 {
+    padding-top: 7rem;
+    text-transform: uppercase;
+  }
+
+  .hero p {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+}
